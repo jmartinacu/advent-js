@@ -10,7 +10,7 @@ function isRobotBack(moves: string): true | [number, number] {
   };
   const makeMove = (move: string, index: number): number => {
     let res = index + 1;
-    const lastIndex = index === moves.length - 1
+    const lastIndex = index === moves.length - 1;
     switch (move) {
       case "L":
         currentPosition = [currentPosition[0] - 1, currentPosition[1]];
